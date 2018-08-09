@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input type="button" value="start" onclick="start()">
+<input type="button" value="stop" onclick="stop()">
+<script type="text/javascript">
+		var i=0;
+		var sI;
+	function colorChange()
+	{
+		var arr=["#cc9922","#bf4477","#999ccc","#hg5645","#gg4477","#cc3322"];
+		document.bgColor=arr[i];
+		i++;
+		if(arr.length==i)
+		{
+			i=0
+		}
+
+	}
+		function start(){
+			sI=setInterval("colorChange()",300);
+		}
+	 function stop()
+	    {
+	    	clearInterval(sI);
+	    }
+	
+	
+</script>
+
+</body>
+</html>
