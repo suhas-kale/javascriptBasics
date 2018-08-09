@@ -1,0 +1,51 @@
+<html>
+<head>
+	<style>
+     #tbl1{ background-color:#cc9933;
+		padding:30px;
+		
+	}
+	
+	</style>
+
+</head>
+<body>
+	<form name="form1">
+	  	 	<input type="text" id="txt1">
+		
+		<table id="tbl1">
+		
+				<tr><td><input type="button" value="1"  onclick="document.form1.txt1.value+=1"></td>
+				<td><input type="button" value="2"  onclick="document.form1.txt1.value+=2"></td>
+				<td><input type="button" value="3"  onclick="document.form1.txt1.value+=3"></td>
+				<td><input type="button" value="+"  onclick="document.form1.txt1.value+='+'"></td></tr>
+				
+				<tr><td><input type="button" value="4"  onclick="document.form1.txt1.value+=4"></td>
+				<td><input type="button" value="5"  onclick="document.form1.txt1.value+=5"></td>
+				<td><input type="button" value="6"  onclick="document.form1.txt1.value+=6"></td>
+				<td><input type="button" value=" -"  onclick="document.form1.txt1.value+='-'"></td></tr>
+				
+				<tr><td><input type="button" value="7"  onclick="document.form1.txt1.value+=7"></td>
+				<td><input type="button" value="8"  onclick="document.form1.txt1.value+=8"></td>
+				<td><input type="button" value="9"  onclick="document.form1.txt1.value+=9"></td>
+				<td><input type="button" value="0"  onclick="document.form1.txt1.value+=0"></td></tr>
+				
+				<tr><td><input type="button" value="*"  onclick="document.form1.txt1.value+='*'"></td>
+				<td><input type="button" value="%"  onclick="document.form1.txt1.value+='%'"></td>
+			    <td><input type="button" value="="  onclick="fun()"></td>
+			    <td><input type="button" value="c"  onclick="document.form1.txt1.value=' '"></td></tr>
+		         
+		 </table>
+		
+<script>
+function fun()
+{
+	num1=document.getElementById("txt1").value;
+	ans=eval(num1);
+	document.form1.txt1.value=(ans);
+	
+}
+</script>
+	
+	<body>
+</html>
