@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#d1{
+		 width:200px;
+	  height:300px;
+	  border:2px solid gray;
+	  text-align:center;
+		}
+		#d2{
+          font-size: 25px;
+		}
+	</style>
+</head>
+<body>
+      <div id="d1">
+      	<p id="d2">This is text</p>
+      </div>
+      <select name="color" id="color1">
+        <option>red</option>
+        <option>green</option>
+        <option>yellow</option>
+       </select>
+      <input type="button" value="submit" onclick="fun1()">
+      <br> 
+
+       <select name="color" id="color2">
+        <option>red</option>
+        <option>green</option>
+        <option>yellow</option>
+       </select>
+    <input type="button" value="submit" onclick="fun2()">
+      <script type="text/javascript">
+      function fun1(){
+      	d1=document.getElementById("d1");
+      	d1.style.backgroundColor=document.getElementById("color1").value;
+      }
+      function fun2(){
+d2=document.getElementById("d2");
+d1.style.color=document.getElementById("color2").value;
+}
+
+      </script>
+</body>
+</html>
