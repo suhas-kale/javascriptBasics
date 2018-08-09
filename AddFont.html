@@ -1,0 +1,28 @@
+<html>
+Font Size:<input type="text" id="text1"><br>
+Font Color:<input type="text" id="text2"><br>
+Background Color:<input type="text" id="text3"><br>
+<input type="button" value="Click" onclick="fun1()"><br>
+<div id="d1">welcome to javascript</div>
+<style type="text/css">
+	div{
+	height: 300px;
+	width: 300px;
+	border: 2px solid black;
+	}
+</style>
+<script>
+function fun1()
+{
+	t1=document.getElementById("text1").value;
+	t2=document.getElementById("text2").value;
+	t3=document.getElementById("text3").value;
+
+	d1=document.getElementById("d1");
+	d1.innerHTML="welcome to javascript";
+	d1.style.fontSize=t1;
+	d1.style.color=t2;
+	d1.style.backgroundColor=t3;
+}
+</script>
+</html>
